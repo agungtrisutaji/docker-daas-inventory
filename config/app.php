@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -123,4 +123,11 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'company' => env('APP_COMPANY', 'Company Name'),
+
+    'itop' => [
+        'url' => env('ITOP_API_URL'),
+        'user' => env('ITOP_API_USER'),
+        'password' => env('ITOP_API_PASSWORD'),
+    ],
 ];
